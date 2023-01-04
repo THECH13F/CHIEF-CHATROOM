@@ -1,4 +1,4 @@
-# CHAT-ROOM
+# CHIEF-CHATROOM
 ![](https://img.shields.io/badge/python-all%20version%20of%20v3-blue)
 <br><br>
 This is a Python-based chat room that provides secure communication. It uses socket programming to set up a server with a given IP address and port number which is ip 127.0.0.1 and port 8000, which clients can connect to. After connecting, users are prompted to enter a nickname, and then messages can be sent and broadcasted to all connected clients As wwell as they can send private messages also.
