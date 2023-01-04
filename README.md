@@ -21,5 +21,8 @@ Python Client.py
 - <b>@private</b> : This will ask you from which user you want to chat with. 
 - <b>@broadcast</b> : If you are in private chat then you can move to broadcast chat with this command
 
+## Help
+The chat server can be improved by suggesting changes and correcting errors, so we can make it more effective.
+
 ## Contact
 📬 Contact with me via email: [hardikkasli123@gmail.com](mailto:hardikkasli123@gmail.com)
