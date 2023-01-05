@@ -8,7 +8,7 @@ This is a Python-based multithreaded chat room that provides secure communicatio
 ``` shell
 Python Server.py
 ```
-<b>Note: </b> Before running the server, make sure to edit the IP address and Port number. By default it is running on Localhost:5555 <br><br>
+<b>Note: </b> Before running the server, make sure to edit the IP address and Port number. By default it is running on Localhost:8000 <br><br>
 2. Run the Client file, to start the conversation. 
 ``` Shell
 Python Client.py
