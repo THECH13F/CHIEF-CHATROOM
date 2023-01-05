@@ -6,12 +6,12 @@ This is a Python-based multithreaded chat room that provides secure communicatio
 ## Usage
 1. We will have to start our Server first.
 ``` shell
-Python Server.py
+Python server.py
 ```
 <b>Note: </b> Before running the server, make sure to edit the IP address and Port number. By default it is running on Localhost:8000 <br><br>
 2. Run the Client file, to start the conversation. 
 ``` Shell
-Python Client.py
+Python client.py
 ```
 <br>
 3. Now Enter a nickname and start your chatting. 
