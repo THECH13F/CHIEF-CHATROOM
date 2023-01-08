@@ -4,7 +4,6 @@ import time
 # import thread module
 from _thread import *
 import threading
-#private m send krne m dikkat aa rahi h jb user left krta h
 def chatwithtwo(c,numusr,data):
 			check_none=0
 			c.send("[+] WELCOME TO PRIVATE CHAT".encode())
@@ -54,17 +53,7 @@ def chat_two_display(numusr,c,recver):
 					chat_two_send(numusr,data,recver,c)
 			except:
 				break
-				#data="@broadcast"
-			'''if data=="@broadcast":
-				display_data(c,numusr)
-			elif data=="@private":
-				chatwithtwo(c,numusr,data)
-			else:
-				for i in range(len(clients)):
-					if clients[i]==recver:
-						send_to=usernames[i]
-				print(f"[+] {numusr} --> {send_to}:- {data}")
-				chat_two_send(numusr,data,recver,c)'''
+				
 def chat_two_send(numusr,data,recver,c):
 	try:
 		sendingtoall=f"[+] {numusr} (private):- {data}"
@@ -87,7 +76,6 @@ def user_left(numusr):
 			pass
 
 def send_data(numusr,senddata,clients,sendcheck):
-	#lock.release()
 	for i in range(len(clients)):
 		if not clients[i]==sendcheck[numusr]:
 			sendingtoall=f"[+] {numusr}:- {senddata}"
@@ -162,18 +150,14 @@ def Main():
 	print("socket is listening")
 	global clients
 	global usernames
-	global threads
 	clients=[]
 	usernames=[]
-	threads=[]
 	connectio(s)
 
 def connectio(s):
 	while True:
 		# establish connection with client
 		c, addr = s.accept()
-
-		# lock acquired by client
 		print('Connected to :', addr[0], ':', addr[1])
 		username=username_check(c)
 		# Start a new thread and return its identifier
